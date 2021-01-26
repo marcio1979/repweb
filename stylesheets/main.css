@@ -1,0 +1,179 @@
+:focus {outline: none; }
+.form-group input, .form-group textarea, .form-group select { border: 1px solid #aaa; box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;border-radius: 2px; padding-right: 30px;-moz-transition: padding .25s; -webkit-transition: padding .25s;-o-transition: padding .25s; transition: padding .25s;}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { background: #fff; border:1px solid #555; box-shadow: 0 0 3px #aaa; padding-right:70px; }
+.form-group input:required, .form-group textarea:required, .form-group select:required { background: #fff url(../images/red_asterisk.png) no-repeat 98% center; }
+.form-group input:required:valid, .form-group textarea:required:valid, .form-group select:required:valid { background: #fff url(../images/valid.png) no-repeat 98% center; box-shadow: 0 0 5px #5cd053; border-color: #28921f; }
+.form-group input:required:focus:invalid, .form-group textarea:required:focus:invalid, .form-group select:required:focus:invalid {  background: #fff url(../images/invalid.png) no-repeat 98% center; box-shadow: 0 0 5px #d45252; border-color: #b03535; }
+.form-group input[type=checkbox], .form-group input[type=radio]  { background-color: #FFF; border: none; box-shadow: none;  }
+
+.menuItems { min-height: auto !important; }
+.list-group-item { height: auto !important; }			
+#dialogWait { position: fixed; height: 300px; width: 300px; margin: 0 auto; top: 30%; }
+.login-logo { max-height: 90px; background-color: #EEE; }
+.space-top { margin-top: 110px !important; }
+.nav-logo { background-color: #EEE; height: 50px; }
+.breadcrumb > .breadcrumb-item + .breadcrumb-item:before { color: #ccc !important;content: "/ " !important;padding: 0 5px !important; }
+/*svg { -webkit-transform: rotate(-90deg); transform: rotate(-90deg); }*/
+.circle_animation { stroke-dasharray: 440; stroke-dashoffset: 440; transition: all 9s linear; }
+#trlist td { vertical-align: middle; }
+.form-group { clear: both;width: 100%;margin-top: 15px;margin-bottom: 15px;}
+.active2 { width: 100% !important; }
+.panel-heading { cursor: pointer; }
+.form-group div p {  color : #ff6969; font-size: 12px; }
+#msg { z-index: 9999; position: inherit; }
+.ui-menu .ui-menu-item-wrapper { height: 40px; font-size: 16px; padding-top: 10px !important; }
+
+
+@media (max-width: 767px) { .navbar-nav .open .dropdown-menu { background-color: #fff !important; width: inherit !important; border: 1px solid rgba(0,0,0,.15) !important; box-shadow: 0 6px 12px rgba(0,0,0,.175) !important; margin: 2px 0 0 !important; float: left !important; position: absolute !important; right: 0 !important; left: auto !important; } }
+@media (min-width: 768px) { .navbar-right { margin-right: 0px; } }
+.navbar-nav { margin: 0px; }
+
+@media only screen and (max-width: 800px) {
+	#no-more-tables table, #no-more-tables thead, #no-more-tables tbody, #no-more-tables th, #no-more-tables td, #no-more-tables tr { display: block; }
+	#no-more-tables thead tr { position: absolute;top: -9999px;left: -9999px; }
+	#no-more-tables tr { border: 1px solid #ccc; }
+	#no-more-tables td { border: none;border-bottom: 1px solid #eee; position: relative;padding-left: 50%; white-space: normal;text-align:left;	}
+	#no-more-tables .username {	overflow-x: auto; }
+	#no-more-tables td:before { position: absolute;	top: 6px;left: 6px;	width: 45%;	padding-right: 10px;white-space: nowrap;text-align:left;font-weight: bold; }
+	#no-more-tables td:before { content: attr(data-title); }
+}
+
+.navbar-fixed-top::after {background: linear-gradient(to right, #ffc79a, #3588b9);content: '';width: 100%;position: absolute; top: 50px;height: 3px;left: 0;}
+
+table {width: 100%;}
+table thead tr .header { background-image: url(../images/bg.gif);background-repeat: no-repeat;background-position: center right;cursor: pointer; padding-right: 25px;}
+table thead tr .headerSortUp {	background-image: url(../images/asc.gif);}
+table thead tr .headerSortDown {background-image: url(../images/desc.gif);}
+
+/*
+ * metismenu - v1.1.3
+ * Easy menu jQuery plugin for Twitter Bootstrap 3
+ * https://github.com/onokumus/metisMenu
+ *
+ * Made by Osman Nuri Okumus
+ * Under MIT License
+ */
+.arrow {    float: right;    line-height: 1.42857;}
+.glyphicon.arrow:before {    content: "\e079";}
+.active > a > .glyphicon.arrow:before {    content: "\e114";}
+.fa.arrow:before {    content: "\f104";}
+.active > a > .fa.arrow:before {  content: "\f107";}
+.plus-times {    float: right;}
+.fa.plus-times:before {    content: "\f067";}
+.active > a > .fa.plus-times {    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);   -webkit-transform: rotate(45deg);    -moz-transform: rotate(45deg);    -ms-transform: rotate(45deg);    -o-transform: rotate(45deg);    transform: rotate(45deg);}
+.plus-minus {    float: right;}
+.fa.plus-minus:before {    content: "\f067";}
+.active > a > .fa.plus-minus:before {    content: "\f068";}
+
+/* Spinner */
+#msgAlert { position: fixed; z-index: 1030; bottom: 0; right: 0; text-align: center; width: 100%; }
+#shadow { width: 100%; height: 100%; overflow: auto; position: fixed; background-color: rgba(0,0,0,0.4); z-index: 9999; left: 0; top: 0;}
+.spin{ height:auto;width:auto;position:fixed;left:50%;top:50%;transform:translate(-50%, -50%); z-index: 9999;}
+.spin span{height:56px;width:56px;border:1px solid green;display:block;border-radius:50%;position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);animation:spin 1500ms ease-in-out infinite;}
+.spin .one{animation-delay:500ms;animation:spin 2000ms ease-in-out infinite;}
+.spin .two{animation:spin 1700ms ease-in-out infinite;animation-delay:300ms;border:10px solid teal;}
+.spin .two{animation:spin 2000ms ease-in-out infinite;border-color:yellow;}
+@keyframes spin{0%{ transform:scale(0); opacity:1;}100%{ transform:scale(1.5); opacity:0;}}
+@keyframes hide{0%{ opacity:0;}10%{ opacity:1;}100%{ opacity:1;}}
+
+
+/* date picker */
+#ui-datepicker-div {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border:0;
+}
+#ui-datepicker-div .ui-widget-header {
+  background: rgba(0, 0, 0, 0.2);
+  border: 0;
+  border-bottom: 1px solid #686868;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #666;
+  padding: 1px 0;
+}
+#ui-datepicker-div.ui-widget-content {
+  color:#f8f8f8 !important;
+}
+#ui-datepicker-div .ui-state-default, #ui-datepicker-div .ui-widget-content .ui-state-default, #ui-datepicker-div .ui-widget-header .ui-state-default {
+  background: none;
+  border:0;
+  color:#f8f8f8;
+  text-align: center;
+}
+#ui-datepicker-div .ui-state-hover, #ui-datepicker-div.ui-widget-content .ui-state-hover, #ui-datepicker-div .ui-widget-header .ui-state-hover, #ui-datepicker-div .ui-state-focus, #ui-datepicker-div.ui-widget-content .ui-state-focus, #ui-datepicker-div .ui-widget-header .ui-state-focus,
+#ui-datepicker-div .ui-state-highlight, #ui-datepicker-div.ui-widget-content .ui-state-highlight, #ui-datepicker-div .ui-widget-header .ui-state-highlight {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border:0;
+  top:2px;
+}
+#ui-datepicker-div .ui-datepicker-group {
+  border-left: 1px solid #686868;
+}
+#ui-datepicker-div .ui-datepicker-group:first-child {
+  border-left:0;
+}
+#ui-datepicker-div .ui-datepicker-buttonpane {
+  margin: 0;
+}
+#ui-datepicker-div .ui-datepicker-group table {
+  margin:0 auto !important;
+}
+.ui-datepicker .ui-datepicker-prev {
+  left: 2px !important;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-next {
+  right: 2px !important;
+  cursor: pointer;
+}
+.ui-icon-circle-triangle-w {
+  background: url(../images/ui-left.png) 0 0 no-repeat !important;
+}
+.ui-icon-circle-triangle-e {
+  background: url(../images/ui-right.png) 0 0 no-repeat !important;
+}
+.ui-icon-circle-arrow-s {
+  background: url(../images/ui-accordion-down.png) 0 0 no-repeat !important;
+}
+.ui-icon-circle-arrow-e {
+  background: url(../images/ui-accordion-right.png) 0 0 no-repeat !important;
+}
+#ui-datepicker-div .ui-slider-horizontal {
+  background: rgba(0, 0, 0, 0.5);
+  height: 4px;
+  border: 0;
+}
+#ui-datepicker-div .ui-slider-horizontal .ui-slider-handle {
+  background: #D8D8D8 !important;
+  border: 1px solid #f8f8f8;
+  height: 8px;
+  width: 8px;
+  top:-2px;
+  margin-left: -4px;
+  outline: none;
+  cursor: pointer;
+}
+.ui-spinner-input {
+  margin:0;
+}
+.ui-spinner .form-control {
+  margin-bottom: 0;
+}
+
+.form-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+.form-label {
+    border: solid 1px #CCC;
+    background: #F9F9F9;
+    padding: 3px;
+    min-height: 26px;
+}
